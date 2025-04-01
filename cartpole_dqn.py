@@ -31,6 +31,7 @@ def train_dqn():
     EPSILON_START = 0.9
     EPSILON_END = 0.05
     EPSILON_DECAY = 0.98
+    TARGET_UPDATE = 10
 
     policy_net = DQN(state_size, action_size)
     target_net = DQN(state_size, action_size)
